@@ -1,0 +1,47 @@
+---
+
+import Features1 from '~/components/widgets/Features1.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+// const metadata = {
+//   title: 'About us',
+// };
+---
+
+<Layout >
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline='业务介绍'
+    image={{
+      src: '~/assets/images/aizhiyun.png',
+      alt: 'Caos Image',
+    }}
+   
+  >
+    <Fragment slot="title">
+      爱智云
+      <span class="text-accent dark:text-white highlight">引领企业数字化转型！ </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      科技创造价值 搭建商业模式 技术服务 灵活就业
+    </Fragment>
+  </Hero>
+
+  <Hero
+  >
+    <Fragment slot="title">
+      一物一码
+      <!-- <span class="text-accent dark:text-white highlight">红包结算业务的现状强行二选一！ </span> -->
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      解决生产销售型企业营销活动无票支出，消费者偶然所得个税完税问题
+    </Fragment>
+  </Hero>
+  {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+    <Features1 image={{ src: `~/assets/images/ywym${num}.png`, alt: `ywym${num}` }} />
+  ))}
+</Layout>

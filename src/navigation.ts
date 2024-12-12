@@ -25,16 +25,16 @@ export const headerData = {
       href: '/',
     },
     {
-      text: '产品展示',
-      // links: [
-      //   {
-      //     text: 'Features (Anchor Link)',
-      //     href: getPermalink('/#features'),
-      //   },
-      //   {
-      //     text: 'Services',
-      //     href: getPermalink('/services'),
-      //   },
+      text: '业务介绍',
+      links: [
+        {
+          text: '爱智云',
+          href: getPermalink('/product/aizhiyun'),
+        },
+        {
+          text: '一物一码',
+          href: getPermalink('/product/ywym'),
+        },
       //   {
       //     text: 'Pricing',
       //     href: getPermalink('/pricing'),
@@ -55,8 +55,8 @@ export const headerData = {
       //     text: 'Privacy policy',
       //     href: getPermalink('/privacy'),
       //   },
-      // ],
-      href: getPermalink('/product'),
+      ],
+      // href: getPermalink('/products'),
     },
     {
       text: '关于我们',
@@ -122,53 +122,51 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: '业务',
       links: [
-        { text: 'Features', href: '#' },
-        { text: 'Security', href: '#' },
-        { text: 'Team', href: '#' },
-        { text: 'Enterprise', href: '#' },
-        { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
-        { text: 'Resources', href: '#' },
+        { text: '爱智云', href: 'https://www.yunyonggongl.com/' },
+        { text: '一物一码', href: '#' },
+        // { text: 'Team', href: '#' },
+        // { text: 'Enterprise', href: '#' },
+        // { text: 'Customer stories', href: '#' },
+        // { text: 'Pricing', href: '#' },
+        // { text: 'Resources', href: '#' },
       ],
     },
     {
-      title: 'Platform',
+      title: '联系我们',
       links: [
-        { text: 'Developer API', href: '#' },
-        { text: 'Partners', href: '#' },
-        { text: 'Atom', href: '#' },
-        { text: 'Electron', href: '#' },
-        { text: 'AstroWind Desktop', href: '#' },
+        { text: '电话：13521407478', },
+        { text: '地址：北京市丰台区时代财富', },
+  
       ],
     },
-    {
-      title: 'Support',
-      links: [
-        { text: 'Docs', href: '#' },
-        { text: 'Community Forum', href: '#' },
-        { text: 'Professional Services', href: '#' },
-        { text: 'Skills', href: '#' },
-        { text: 'Status', href: '#' },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+    // {
+    //   title: 'Support',
+    //   links: [
+    //     { text: 'Docs', href: '#' },
+    //     { text: 'Community Forum', href: '#' },
+    //     { text: 'Professional Services', href: '#' },
+    //     { text: 'Skills', href: '#' },
+    //     { text: 'Status', href: '#' },
+    //   ],
+    // },
+    // {
+    //   title: 'Company',
+    //   links: [
+    //     { text: 'About', href: '#' },
+    //     { text: 'Blog', href: '#' },
+    //     { text: 'Careers', href: '#' },
+    //     { text: 'Press', href: '#' },
+    //     { text: 'Inclusion', href: '#' },
+    //     { text: 'Social Impact', href: '#' },
+    //     { text: 'Shop', href: '#' },
+    //   ],
+    // },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    // { text: 'Terms', href: getPermalink('/terms') },
+    // { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
     // { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
@@ -178,7 +176,7 @@ export const footerData = {
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-  ©2024 中数科数字产业集团
+  COPYRIGHT©2024 中数科数字产业集团
      · <a href='https://beian.miit.gov.cn/' target="_black"> 京ICP备2022017343号-1</a>
   `,
 };

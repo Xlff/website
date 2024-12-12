@@ -1,0 +1,34 @@
+---
+import Features4 from '~/components/widgets/Features4.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+
+---
+
+<Layout>
+  <!-- Hero Widget ******************* -->
+
+  <Hero tagline="业务介绍">
+    <Fragment slot="title">
+      一物一码
+      <!-- <span class="text-accent dark:text-white highlight">红包结算业务的现状强行二选一！ </span> -->
+    </Fragment>
+
+    <Fragment slot="subtitle"> 解决生产销售型企业营销活动无票支出，消费者偶然所得个税完税问题 </Fragment>
+  </Hero>
+
+  <Features4 image={{ src: `~/assets/images/ywym1.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym2.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym3.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym4.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym5.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym6.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym7.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym8.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym9.png`, alt: `ywym1` }} />
+  <Features4 image={{ src: `~/assets/images/ywym10.png`, alt: `ywym1` }} />
+
+</Layout>
+
+

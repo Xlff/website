@@ -1,0 +1,32 @@
+---
+
+import Hero from '~/components/widgets/Hero.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+// const metadata = {
+//   title: 'About us',
+// };
+---
+
+<Layout >
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline='业务介绍'
+    image={{
+      src: '~/assets/images/aizhiyun.png',
+      alt: 'Caos Image',
+    }}
+   
+  >
+    <Fragment slot="title">
+      爱智云
+      <span class="text-accent dark:text-white highlight">引领企业数字化转型！ </span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      科技创造价值 搭建商业模式 技术服务 灵活就业
+    </Fragment>
+  </Hero>
+
+</Layout>
