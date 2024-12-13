@@ -57,10 +57,46 @@ const metadata = {
 
   <!-- Features Widget *************** -->
 
-  <Features1 id="chanye" title="产业分布" image={{ src: '~/assets/images/chanye.png', alt: '产业分布' }} />
+  <Features1
+    id="chanye"
+    title="产业分布"
+    image={{ src: '~/assets/images/chanye.png', alt: '产业分布', height: '460' }}
+  />
 
   <!-- Content Widget **************** -->
-
+  <Content
+    title="业务背景"
+    items={[
+      {
+        title: '社保由税务局征收，企业不合规缴纳的风险越来越大',
+        description:
+          '根据2023年《中国企业社保白皮书》统计，仅28.9%的企业能做到社保缴费基数完全合规。员工合同工资、实发工资、社保公积金基数和个税基数实现统一，企业未缴或不合规缴纳社保将面临越来越高的风险。',
+      },
+      {
+        title: '金税四期正式上线，国家开启大数据强监管时代',
+        description:
+          '金税四期实现了“以数治税“，将“税费”全数据、全业务、全流程“云化”打通。企业数据信息将更为透明化，监控更加全面，同样也意味着，税务稽查将会更严、更精准、更全方位。',
+      },
+      {
+        title: '税务、工商、社保、统计、银行国土等部门，共享纳税人的业务信息',
+        description:
+          '企业其他应收款占比过大，可能是高管借支绩效、股东借用公司资金、关联方之间资金借支等，会被认定为有推迟或漏缴个人所得税、增值税的风险；企业扣税类别突然出现大额异常，出现与主营业务无关的大额进项税额抵扣，以上情况均为金四系统风险扫描重点。金四系统自动预警，无需人工分析即可生成。',
+      },
+      {
+        title: '个税汇算清缴时，个人未合规完税将触发自然人个税预警',
+        description:
+          '对自然人涉税数据进行全面归集，对纳税信息进行有效整合，连通对接更多的税源信息，加强个人所得税的征收管理。发票冲抵工资或其他费用都将面临涉税风险。',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/yewubeijing.png',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
   <Content
     isReversed
     title="企业痛点"
@@ -86,7 +122,7 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      src: '~/assets/images/qiyetongdian.png',
       alt: 'Colorful Image',
     }}
   >
@@ -96,7 +132,11 @@ const metadata = {
   </Content>
 
   <!-- Content Widget **************** -->
-  <Features1 id="chanye" title="用工区别" image={{ src: '~/assets/images/yonggong.png', alt: '用工区别' }} />
+  <Features1
+    id="yonggong"
+    title="用工区别"
+    image={{ src: '~/assets/images/yonggong.png', alt: '用工区别', height: '400' }}
+  />
 
   <!-- Steps Widget ****************** -->
 
